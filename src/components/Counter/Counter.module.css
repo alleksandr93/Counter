@@ -1,0 +1,41 @@
+.borderCounter {
+    border: 6px solid #7acee9;
+    width: 720px;
+    height: 510px;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.windowCounter {
+    border: 6px solid #7acee9;
+    border-radius: 16px;
+    width: 650px;
+    height: 253px;
+    color: #7acee9;
+    font-size: 87px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.windowBTN{
+    border: 6px solid #7acee9;
+    border-radius: 16px;
+    width: 650px;
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.windowBTN button{
+    font-size: 40px;
+    font-weight: 700;
+    background-color:#7acee9 ;
+    color: #2d2c34;
+    padding: 30px ;
+}
