@@ -1,22 +1,21 @@
 .borderCounter {
     border: 6px solid #7acee9;
-    width: 720px;
-    height: 510px;
-    padding: 30px;
-    border-radius: 16px;
+    width: 360px;
+    height: 255px;
+    padding: 15px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
 .windowCounter {
     border: 6px solid #7acee9;
-    border-radius: 16px;
-    width: 650px;
-    height: 253px;
+    border-radius: 8px;
+    width: 325px;
+    height: 126px;
     color: #7acee9;
-    font-size: 87px;
+    font-size: 43px;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -25,17 +24,58 @@
 }
 .windowBTN{
     border: 6px solid #7acee9;
-    border-radius: 16px;
-    width: 650px;
-    height: 148px;
+    border-radius: 8px;
+    width: 325px;
+    height: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 35px;
 }
-.windowBTN button{
-    font-size: 40px;
+.counterFlex{
+
+}
+.windowSetCounter{
+    width: 305px;
+    height: 126px;
+    border: 6px solid #7acee9;
+    border-radius: 8px;
+    padding: 10px;
+}
+.maxMin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.maxMin h3{
+    color: #7acee9;
+}
+.maxMin input{
+width: 70px;
+}
+.maxCount{
+    color: red;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+}
+input{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.errorText{
+    font-size: 20px;
     font-weight: 700;
-    background-color:#7acee9 ;
-    color: #2d2c34;
-    padding: 30px ;
+    color: red;
+    text-align: center;
+}
+.text{
+color: #292c35;
+    font-size: 20px;
+}
+.inputError{
+    background-color: #f44336;
 }

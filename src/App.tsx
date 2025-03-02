@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
+import {Counter} from './components/Counter/Counter';
+import {Provider} from 'react-redux';
+import {store} from './state/store';
+import {HashRouter} from 'react-router-dom';
 
+
+
+const tg = window.Telegram.WebApp
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    useEffect(() => {
+        // Инициализация Telegram Web App
+        tg.expand(); // Разворачивает Web App на весь экран
+        console.log('Theme params:', tg.themeParams); // Логируем параметры темы
+    }, [tg])
+    const onClickHandler=()=>{
+        tg.close()
+    }
+    return (
+        <>
+
+            <div className={'wrapper'}>
+                <button onClick={onClickHandler} className={'closeBtn'}>Close</button>
+                <Provider store={store}>
+                    <HashRouter>
+                        <Counter/>
+                    </HashRouter>
+                </Provider>
+
+            </div>
+        </>
+
+    );
 }
 
 export default App;

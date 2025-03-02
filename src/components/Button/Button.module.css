@@ -1,0 +1,21 @@
+.defaultButton {
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #7acee9;
+    color: #2d2c34;
+    padding: 8px 15px 2px 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.defaultButton:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+.defaultButton:active {
+    background-color: #0032ff;
+}
+.disabled{
+    opacity: 0.5;
+}
